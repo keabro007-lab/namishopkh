@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="km" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nami shop kh - Official Robux Store Cambodia</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        roblox: {
+                            dark: '#0f172a',
+                            card: '#1e293b',
+                            accent: '#ef4444',
+                            purple: '#8b5cf6',
+                            glow: '#3b82f6'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Battambang', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts: Battambang & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Battambang', 'Inter', sans-serif;
+            background-color: #0b0f19;
+            color: #f8fafc;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px rgba(239, 68, 68, 0.25);
+        }
+        .glow-button {
+            box-shadow: 0 4px 20px rgba(239, 68, 68, 0.4);
+            transition: all 0.3s ease;
+        }
+        .glow-button:hover {
+            box-shadow: 0 6px 25px rgba(239, 68, 68, 0.6);
+            transform: translateY(-2px);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0f19;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ef4444;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-red-500 selection:text-white">
+
+    <!-- Top Notification Bar -->
+    <div class="bg-gradient-to-r from-red-600 via-purple-600 to-blue-600 text-white text-xs sm:text-sm py-2 px-4 text-center font-medium shadow-md">
+        <i class="fa-solid fa-bullhorn mr-2 animate-bounce"></i> ស្វាគមន៍មកកាន់ហាងលក់ Robux ផ្លូវការ! រហ័ស សុវត្ថិភាព ទុកចិត្តបាន 100% | Telegram: <a href="https://t.me/sovannhai1" target="_blank" class="underline font-bold hover:text-yellow-300">sovannhai1</a>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-2xl overflow-hidden border-2 border-red-500/50 shadow-lg shadow-red-500/30 bg-slate-900 flex items-center justify-center">
+                    <svg viewBox="0 0 100 100" class="w-full h-full object-cover">
+                        <circle cx="50" cy="50" r="50" fill="#bae6fd"/>
+                        <path d="M50 15 C30 15 22 30 25 50 C28 70 40 75 50 85 C60 75 72 70 75 50 C78 30 70 15 50 15 Z" fill="#38220f"/>
+                        <circle cx="38" cy="45" r="7" fill="#22c55e"/>
+                        <circle cx="62" cy="45" r="7" fill="#22c55e"/>
+                        <circle cx="39" cy="44" r="3" fill="#ffffff"/>
+                        <circle cx="63" cy="44" r="3" fill="#ffffff"/>
+                        <path d="M45 58 Q50 63 55 58" stroke="#1e293b" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <path d="M35 22 Q50 10 65 25 Q75 35 72 50 Q65 30 50 25 Q35 30 28 50 Q25 35 35 22 Z" fill="#29180b"/>
+                    </svg>
+                </div>
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xl sm:text-2xl font-black tracking-wider bg-gradient-to-r from-red-500 via-rose-400 to-amber-400 bg-clip-text text-transparent">Nami shop kh</span>
+                    </div>
+                    <!-- @admin nami verify badge -->
+                    <div class="flex items-center space-x-1.5 mt-0.5">
+                        <span class="bg-blue-500/20 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded-full border border-blue-500/30 flex items-center space-x-1">
+                            <i class="fa-solid fa-circle-check text-xs"></i>
+                            <span>@admin nami verify</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-3">
+                <button onclick="openAdminModalPrompt()" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white text-xs sm:text-sm font-semibold border border-slate-700 transition flex items-center space-x-2">
+                    <i class="fa-solid fa-lock text-red-400"></i>
+                    <span class="hidden sm:inline">គ្រប់គ្រង Stock (Admin)</span>
+                    <span class="sm:hidden">Admin</span>
+                </button>
+                <a href="https://t.me/sovannhai1" target="_blank" class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs sm:text-sm font-semibold transition flex items-center space-x-2 shadow-lg shadow-blue-600/30">
+                    <i class="fa-brands fa-telegram text-lg"></i>
+                    <span>ទំនាក់ទំនង Telegram</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full">
+        
+        <!-- Hero Section & Username Verification -->
+        <div class="mb-12 text-center max-w-3xl mx-auto">
+            <div class="inline-block px-4 py-1.5 mb-4 rounded-full bg-red-500/10 border border-red-500/20 text-red-400 text-xs sm:text-sm font-semibold">
+                <i class="fa-solid fa-shield-halved mr-1"></i> សុវត្ថិភាពខ្ពស់ មិនបាច់ប្រើ Password
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-black mb-4 tracking-tight leading-tight">
+                ទិញ <span class="bg-gradient-to-r from-red-500 to-amber-500 bg-clip-text text-transparent">Robux</span> រហ័ស និងទំនុកចិត្តខ្ពស់
+            </h1>
+            <p class="text-slate-400 text-sm sm:text-base mb-8">
+                សូមបញ្ចូល Roblox Username របស់អ្នកដើម្បីធ្វើការផ្ទៀងផ្ទាត់ មុនពេលជ្រើសរើសកញ្ចប់ Robux ដែលអ្នកចង់ទិញ។
+            </p>
+
+            <!-- Username Input Box -->
+            <div class="glass-card p-6 sm:p-8 rounded-3xl glow-effect relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-red-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <label class="block text-left text-sm font-semibold text-slate-300 mb-2">
+                    <i class="fa-solid fa-user-tag text-red-500 mr-2"></i> Roblox Username របស់អ្នក
+                </label>
+                
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <div class="relative flex-grow">
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-4 text-slate-500">
+                            <i class="fa-solid fa-at"></i>
+                        </span>
+                        <input type="text" id="robloxUsername" placeholder="ឧទាហរណ៍: RobloxPlayer123" 
+                            class="w-full pl-11 pr-4 py-3.5 bg-slate-900/90 border border-slate-700 rounded-2xl text-white placeholder-slate-500 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/20 text-base transition">
+                    </div>
+                    <button onclick="verifyUsername()" id="verifyBtn" class="px-8 py-3.5 bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white font-bold rounded-2xl transition flex items-center justify-center space-x-2 glow-button whitespace-nowrap">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>ផ្ទៀងផ្ទាត់ (Verify)</span>
+                    </button>
+                </div>
+
+                <!-- Verification Status Box -->
+                <div id="verifyStatus" class="hidden mt-4 p-4 rounded-xl text-left border flex items-center space-x-3 transition-all">
+                    <!-- Dynamic content filled via JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Section Header -->
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-6 pb-4 border-b border-slate-800 gap-4">
+            <div>
+                <h2 class="text-2xl font-bold flex items-center space-x-2">
+                    <i class="fa-solid fa-gem text-red-500"></i>
+                    <span>តារាងតម្លៃកញ្ចប់ Robux</span>
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-400 mt-1">ជ្រើសរើសកញ្ចប់ដែលអ្នកពេញចិត្តខាងក្រោម</p>
+            </div>
+            <div class="flex items-center space-x-2 bg-slate-800/80 px-4 py-2 rounded-xl border border-slate-700 text-xs sm:text-sm">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="text-slate-300">ស្តុកមានជាប្រចាំ ធានារហ័សទាន់ចិត្ត</span>
+            </div>
+        </div>
+
+        <!-- Robux Packages Compact Grid -->
+        <div id="productsGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 sm:gap-4">
+            <!-- Dynamic package cards inserted by JavaScript -->
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="glass-card border-t border-slate-800 mt-20 py-8 text-center text-xs sm:text-sm text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 space-y-4">
+            <div class="flex justify-center space-x-6">
+                <a href="https://t.me/sovannhai1" target="_blank" class="hover:text-red-400 transition flex items-center space-x-1">
+                    <i class="fa-brands fa-telegram text-lg text-blue-400"></i>
+                    <span>Telegram: sovannhai1</span>
+                </a>
+            </div>
+            <p>&copy; 2026 Nami shop kh. រក្សាសិទ្ធិគ្រប់យ៉ាង។ មិនមែនជាវេបសាយផ្លូវការរបស់ Roblox Corporation ទេ។</p>
+        </div>
+    </footer>
+
+    <!-- Checkout Modal -->
+    <div id="checkoutModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden p-4">
+        <div class="glass-card w-full max-w-md rounded-3xl p-6 sm:p-8 border border-slate-700 shadow-2xl relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeCheckoutModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white bg-slate-800 w-9 h-9 rounded-full flex items-center justify-center transition">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <div class="text-center mb-6">
+                <div class="w-16 h-16 bg-red-500/10 border border-red-500/20 text-red-500 rounded-2xl mx-auto flex items-center justify-center text-3xl mb-3 shadow-lg shadow-red-500/10">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <h3 class="text-xl font-bold">បញ្ជាក់ការបញ្ជាទិញ</h3>
+                <p class="text-xs text-slate-400 mt-1">សូមពិនិត្យព័ត៌មានខាងក្រោមមុនពេលផ្ញើជូន Admin</p>
+            </div>
+
+            <div class="space-y-3 bg-slate-900/60 p-4 rounded-2xl border border-slate-800 text-sm mb-6">
+                <div class="flex justify-between items-center py-1 border-b border-slate-800">
+                    <span class="text-slate-400">Roblox Username:</span>
+                    <span id="modalUsername" class="font-bold text-red-400"></span>
+                </div>
+                <div class="flex justify-between items-center py-1 border-b border-slate-800">
+                    <span class="text-slate-400">កញ្ចប់ Robux:</span>
+                    <span id="modalRobux" class="font-bold text-amber-400"></span>
+                </div>
+                <div class="flex justify-between items-center py-1 border-b border-slate-800">
+                    <span class="text-slate-400">តម្លៃ USD:</span>
+                    <span id="modalUsd" class="font-bold text-emerald-400"></span>
+                </div>
+                <div class="flex justify-between items-center py-1">
+                    <span class="text-slate-400">តម្លៃ ៛ (Riel):</span>
+                    <span id="modalRiel" class="font-bold text-cyan-400"></span>
+                </div>
+            </div>
+
+            <p class="text-xs text-slate-400 mb-6 text-center leading-relaxed">
+                ពេលចុចប៊ូតុងខាងក្រោម វានឹងបើក Telegram ទៅកាន់ <span class="text-white font-bold">sovannhai1</span> ជាមួយសារព័ត៌មានរបស់អ្នកស្រេច ដើម្បីធ្វើការទូទាត់ប្រាក់។
+            </p>
+
+            <button onclick="confirmPurchase()" class="w-full py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold rounded-2xl transition shadow-lg shadow-blue-600/40 flex items-center justify-center space-x-2">
+                <i class="fa-brands fa-telegram text-xl"></i>
+                <span>ចូលទិញឥឡូវនេះ (Telegram)</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Admin Stock Management Modal -->
+    <div id="adminModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm hidden p-4">
+        <div class="glass-card w-full max-w-lg rounded-3xl p-6 sm:p-8 border border-slate-700 shadow-2xl relative max-h-[90vh] flex flex-col">
+            <div class="flex justify-between items-center mb-4 pb-3 border-b border-slate-800">
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-lock text-red-500"></i>
+                    <h3 class="text-lg font-bold">ផ្ទាំងគ្រប់គ្រងស្តុក (Admin Panel)</h3>
+                </div>
+                <button onclick="closeAdminModal()" class="text-slate-400 hover:text-white bg-slate-800 w-8 h-8 rounded-full flex items-center justify-center transition">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+            
+            <p class="text-xs text-slate-400 mb-4">
+                ជាម្ចាស់វេបសាយ អ្នកអាចកែសម្រួលចំនួនស្តុកសម្រាប់កញ្ចប់នីមួយៗនៅទីនេះ។ ទិន្នន័យនឹងត្រូវរក្សាទុកដោយស្វ័យប្រវត្តិ។
+            </p>
+
+            <div id="adminPackageList" class="overflow-y-auto space-y-3 pr-2 flex-grow max-h-[50vh]">
+                <!-- Admin items generated by JS -->
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-800 flex justify-end space-x-3">
+                <button onclick="resetDefaultStock()" class="px-4 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded-xl text-xs sm:text-sm transition">
+                    កំណត់ដើម (Reset)
+                </button>
+                <button onclick="saveAdminStock()" class="px-5 py-2.5 bg-red-600 hover:bg-red-500 text-white font-semibold rounded-xl text-xs sm:text-sm transition">
+                    រក្សាទុក (Save)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Message Box -->
+    <div id="messageBox" class="fixed bottom-6 right-6 z-50 transform translate-y-32 opacity-0 transition-all duration-300 max-w-sm">
+        <div id="messageContent" class="glass-card px-5 py-4 rounded-2xl border shadow-2xl flex items-center space-x-3 text-sm font-medium">
+            <!-- Dynamic message -->
+        </div>
+    </div>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        const defaultPackages = [
+            { id: 1, robux: "98", usd: "$1.00", riel: "4,100 ៛", stock: 50 },
+            { id: 2, robux: "190", usd: "$2.00", riel: "8,200 ៛", stock: 40 },
+            { id: 3, robux: "270", usd: "$3.00", riel: "12,300 ៛", stock: 35 },
+            { id: 4, robux: "360", usd: "$4.00", riel: "16,400 ៛", stock: 25 },
+            { id: 5, robux: "450", usd: "$5.00", riel: "20,500 ៛", stock: 30 },
+            { id: 6, robux: "540", usd: "$6.00", riel: "24,600 ៛", stock: 15 },
+            { id: 7, robux: "630", usd: "$7.00", riel: "28,700 ៛", stock: 20 },
+            { id: 8, robux: "720", usd: "$8.00", riel: "32,800 ៛", stock: 12 },
+            { id: 9, robux: "810", usd: "$9.00", riel: "36,900 ៛", stock: 10 },
+            { id: 10, robux: "900", usd: "$10.00", riel: "41,000 ៛", stock: 50 },
+            { id: 11, robux: "1,350", usd: "$15.00", riel: "61,500 ៛", stock: 18 },
+            { id: 12, robux: "2,000", usd: "$22.00", riel: "90,200 ៛", stock: 8 }
+        ];
+
+        let packages = [];
+        let verifiedUser = null;
+        let selectedPackageForCheckout = null;
+
+        function loadPackagesStock() {
+            const saved = localStorage.getItem('robux_store_stock_kh');
+            if (saved) {
+                try {
+                    const parsed = JSON.parse(saved);
+                    packages = defaultPackages.map(p => {
+                        const found = parsed.find(item => item.id === p.id);
+                        return found ? { ...p, stock: found.stock } : p;
+                    });
+                } catch (e) {
+                    packages = JSON.parse(JSON.stringify(defaultPackages));
+                }
+            } else {
+                packages = JSON.parse(JSON.stringify(defaultPackages));
+            }
+        }
+
+        function renderProducts() {
+            const grid = document.getElementById('productsGrid');
+            grid.innerHTML = '';
+
+            packages.forEach(pkg => {
+                const isOutOfStock = pkg.stock <= 0;
+                
+                const card = document.createElement('div');
+                card.className = `glass-card rounded-2xl p-3.5 sm:p-4 flex flex-col justify-between border transition duration-300 relative overflow-hidden ${isOutOfStock ? 'opacity-60 border-slate-800' : 'hover:border-red-500/50 hover:shadow-lg hover:shadow-red-500/10'}`;
+                
+                card.innerHTML = `
+                    <div class="absolute top-0 right-0 bg-gradient-to-l from-red-600/20 to-transparent w-16 h-16 rounded-bl-full pointer-events-none"></div>
+                    
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="text-[10px] font-bold text-red-400 bg-red-500/10 px-2 py-0.5 rounded-full border border-red-500/20">
+                                RBX
+                            </span>
+                            <span class="text-[10px] font-semibold ${isOutOfStock ? 'text-red-400 bg-red-500/10 px-1.5 py-0.5 rounded-full' : 'text-slate-400'}">
+                                ស្តុក: ${pkg.stock}
+                            </span>
+                        </div>
+
+                        <div class="text-center my-1">
+                            <div class="text-2xl sm:text-3xl font-black text-white tracking-tight">${pkg.robux}</div>
+                            <div class="text-[11px] text-slate-400 font-medium">Robux</div>
+                        </div>
+
+                        <div class="text-center space-y-0.5 my-3 pt-2 border-t border-slate-800/80">
+                            <div class="text-sm font-bold text-emerald-400">${pkg.usd}</div>
+                            <div class="text-[11px] font-semibold text-cyan-400">${pkg.riel}</div>
+                        </div>
+                    </div>
+
+                    <button onclick="handleBuyClick('${pkg.id}')" 
+                        class="w-full py-2.5 px-2 rounded-xl font-bold text-xs transition flex items-center justify-center space-x-1.5 ${
+                            isOutOfStock 
+                                ? 'bg-slate-800 text-slate-500 cursor-not-allowed border border-slate-700' 
+                                : 'bg-gradient-to-r from-red-600 to-rose-600 hover:from-red-500 hover:to-rose-500 text-white shadow-md shadow-red-600/30 glow-button'
+                        }">
+                        <i class="fa-solid ${isOutOfStock ? 'fa-ban' : 'fa-cart-shopping'} text-xs"></i>
+                        <span>${isOutOfStock ? 'អស់ស្តុក' : 'ទិញឥឡូវនេះ'}</span>
+                    </button>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        function verifyUsername() {
+            const input = document.getElementById('robloxUsername');
+            const username = input.value.trim();
+            const statusBox = document.getElementById('verifyStatus');
+
+            if (!username) {
+                showCustomMessage('សូមបញ្ចូល Roblox Username របស់អ្នកជាមុនសិន!', 'error');
+                input.focus();
+                return;
+            }
+
+            const btn = document.getElementById('verifyBtn');
+            btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> <span>កំពុងផ្ទៀងផ្ទាត់...</span>`;
+            btn.disabled = true;
+
+            setTimeout(() => {
+                btn.innerHTML = `<i class="fa-solid fa-circle-check"></i> <span>ផ្ទៀងផ្ទាត់ (Verify)</span>`;
+                btn.disabled = false;
+                
+                verifiedUser = username;
+                statusBox.className = "mt-4 p-4 rounded-xl text-left border border-emerald-500/30 bg-emerald-500/10 flex items-center space-x-3 text-emerald-400";
+                statusBox.innerHTML = `
+                    <div class="w-10 h-10 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400 shrink-0 text-lg">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div>
+                        <div class="font-bold">ផ្ទៀងផ្ទាត់បានជោគជ័យ!</div>
+                        <div class="text-xs text-slate-300">Username: <span class="text-white font-bold">@${username}</span></div>
+                    </div>
+                `;
+                statusBox.classList.remove('hidden');
+                showCustomMessage('ផ្ទៀងផ្ទាត់ Username ជោគជ័យ!', 'success');
+            }, 800);
+        }
+
+        function handleBuyClick(pkgId) {
+            if (!verifiedUser) {
+                showCustomMessage('សូមបញ្ចូល និងផ្ទៀងផ្ទាត់ Username របស់អ្នកជាមុនសិន!', 'error');
+                document.getElementById('robloxUsername').focus();
+                return;
+            }
+
+            const pkg = packages.find(p => p.id == pkgId);
+            if (!pkg || pkg.stock <= 0) {
+                showCustomMessage('កញ្ចប់នេះអស់ពីស្តុកហើយ!', 'error');
+                return;
+            }
+
+            selectedPackageForCheckout = pkg;
+
+            document.getElementById('modalUsername').innerText = '@' + verifiedUser;
+            document.getElementById('modalRobux').innerText = pkg.robux + ' Robux';
+            document.getElementById('modalUsd').innerText = pkg.usd;
+            document.getElementById('modalRiel').innerText = pkg.riel;
+
+            document.getElementById('checkoutModal').classList.remove('hidden');
+        }
+
+        function closeCheckoutModal() {
+            document.getElementById('checkoutModal').classList.add('hidden');
+        }
+
+        function confirmPurchase() {
+            if (!selectedPackageForCheckout || !verifiedUser) return;
+
+            const pkg = selectedPackageForCheckout;
+            const telegramUsername = "sovannhai1";
+            
+            const message = `សួស្តី Admin! ខ្ញុំចង់ទិញ Robux:\n` +
+                            `- Roblox Username: ${verifiedUser}\n` +
+                            `- កញ្ចប់: ${pkg.robux} Robux\n` +
+                            `- តម្លៃ: ${pkg.usd} (${pkg.riel})\n` +
+                            `សូមជួយពិនិត្យ និងណែនាំពីវិធីទូទាត់ប្រាក់។`;
+
+            const encodedMessage = encodeURIComponent(message);
+            const telegramUrl = `https://t.me/${telegramUsername}?text=${encodedMessage}`;
+
+            if (pkg.stock > 0) {
+                pkg.stock -= 1;
+                savePackagesToStorage();
+                renderProducts();
+            }
+
+            closeCheckoutModal();
+            showCustomMessage('កំពុងបញ្ជូនទៅកាន់ Telegram...', 'success');
+
+            setTimeout(() => {
+                window.open(telegramUrl, '_blank');
+            }, 500);
+        }
+
+        function openAdminModalPrompt() {
+            const secretKeyParts = ['na', 'mi', 'sm', 'os', '1'];
+            const correctKey = secretKeyParts.join('');
+
+            const inputKey = prompt("សូមបញ្ចូល Admin Secret Key:");
+            if (inputKey === null) return;
+
+            if (inputKey === correctKey) {
+                openAdminModal();
+            } else {
+                showCustomMessage('Secret Key មិនត្រឹមត្រូវទេ!', 'error');
+            }
+        }
+
+        function openAdminModal() {
+            renderAdminStockList();
+            document.getElementById('adminModal').classList.remove('hidden');
+        }
+
+        function closeAdminModal() {
+            document.getElementById('adminModal').classList.add('hidden');
+            renderProducts();
+        }
+
+        function renderAdminStockList() {
+            const container = document.getElementById('adminPackageList');
+            container.innerHTML = '';
+
+            packages.forEach(pkg => {
+                const item = document.createElement('div');
+                item.className = "flex items-center justify-between p-3 bg-slate-900/80 rounded-2xl border border-slate-800";
+                item.innerHTML = `
+                    <div>
+                        <div class="font-bold text-sm text-white">${pkg.robux} Robux</div>
+                        <div class="text-xs text-slate-400">${pkg.usd} / ${pkg.riel}</div>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button onclick="updateStock(${pkg.id}, -1)" class="w-8 h-8 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center font-bold transition">
+                            <i class="fa-solid fa-minus text-xs"></i>
+                        </button>
+                        <input type="number" id="stock-input-${pkg.id}" value="${pkg.stock}" onchange="setStock(${pkg.id}, this.value)" 
+                            class="w-16 py-1.5 bg-slate-800 border border-slate-700 rounded-xl text-center text-white font-bold text-sm focus:outline-none focus:border-red-500">
+                        <button onclick="updateStock(${pkg.id}, 1)" class="w-8 h-8 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center font-bold transition">
+                            <i class="fa-solid fa-plus text-xs"></i>
+                        </button>
+                    </div>
+                `;
+                container.appendChild(item);
+            });
+        }
+
+        function updateStock(pkgId, change) {
+            const pkg = packages.find(p => p.id == pkgId);
+            if (pkg) {
+                pkg.stock = Math.max(0, pkg.stock + change);
+                document.getElementById(`stock-input-${pkgId}`).value = pkg.stock;
+            }
+        }
+
+        function setStock(pkgId, val) {
+            const pkg = packages.find(p => p.id == pkgId);
+            if (pkg) {
+                pkg.stock = Math.max(0, parseInt(val) || 0);
+            }
+        }
+
+        function saveAdminStock() {
+            savePackagesToStorage();
+            closeAdminModal();
+            showCustomMessage('បានរក្សាទុកចំនួនស្តុកដោយជោគជ័យ!', 'success');
+        }
+
+        function savePackagesToStorage() {
+            localStorage.setItem('robux_store_stock_kh', JSON.stringify(packages.map(p => ({ id: p.id, stock: p.stock }))));
+        }
+
+        function resetDefaultStock() {
+            localStorage.removeItem('robux_store_stock_kh');
+            loadPackagesStock();
+            renderAdminStockList();
+            showCustomMessage('បានកំណត់ស្តុកដើមវិញហើយ!', 'success');
+        }
+
+        function showCustomMessage(text, type = 'success') {
+            const box = document.getElementById('messageBox');
+            const content = document.getElementById('messageContent');
+            
+            const icon = type === 'success' ? '<i class="fa-solid fa-circle-check text-emerald-400 text-xl"></i>' : '<i class="fa-solid fa-circle-exclamation text-red-400 text-xl"></i>';
+            const borderColor = type === 'success' ? 'border-emerald-500/40 bg-emerald-950/90 text-emerald-200' : 'border-red-500/40 bg-red-950/90 text-red-200';
+
+            content.className = `glass-card px-5 py-4 rounded-2xl border shadow-2xl flex items-center space-x-3 text-sm font-medium ${borderColor}`;
+            content.innerHTML = `${icon} <span>${text}</span>`;
+
+            box.classList.remove('translate-y-32', 'opacity-0');
+            box.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                box.classList.remove('translate-y-0', 'opacity-100');
+                box.classList.add('translate-y-32', 'opacity-0');
+            }, 3000);
+        }
+
+        window.onload = function() {
+            loadPackagesStock();
+            renderProducts();
+        };
+    </script>
+</body>
+</html>
